@@ -787,7 +787,7 @@ export default function HomePage() {
                                         asChild
                                         className="text-base"
                                     >
-                                        <Link href="#">
+                                        <Link href="/cotizacion">
                                             Solicitar Cotización
                                         </Link>
                                     </Button>
