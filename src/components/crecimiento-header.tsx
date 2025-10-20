@@ -7,7 +7,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-export function Header() {
+export function CrecimientoHeader() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
@@ -20,7 +20,7 @@ export function Header() {
                         transition={{ duration: 0.2 }}
                     >
                         <motion.div
-                            className="h-14 w-14 bg-primary rounded-full"
+                            className="h-14 w-14 p-0.5 bg-[#55206C] rounded-full"
                             whileHover={{ rotate: 6 }}
                             transition={{ duration: 0.3 }}
                         >
@@ -28,7 +28,7 @@ export function Header() {
                                 alt="Logo"
                                 width={64}
                                 height={64}
-                                src="/logo.png"
+                                src="/logo-morado.png"
                             />
                         </motion.div>
                         <span className="text-xl font-bold">CAEMP</span>
@@ -42,7 +42,7 @@ export function Header() {
                     >
                         <Link
                             href="/"
-                            className="text-sm font-medium transition-all hover:text-primary"
+                            className="text-sm font-medium transition-all hover:text-[#55206C]"
                         >
                             Inicio
                         </Link>
@@ -53,7 +53,7 @@ export function Header() {
                     >
                         <Link
                             href="/cursos"
-                            className="text-sm font-medium transition-all hover:text-primary"
+                            className="text-sm font-medium transition-all hover:text-[#55206C]"
                         >
                             Cursos
                         </Link>
@@ -64,7 +64,7 @@ export function Header() {
                     >
                         <Link
                             href="/crecimiento"
-                            className="text-sm font-medium transition-all hover:text-primary"
+                            className="text-sm font-medium transition-all hover:text-[#55206C]"
                         >
                             Crecimiento
                         </Link>
@@ -74,8 +74,8 @@ export function Header() {
                         transition={{ duration: 0.2 }}
                     >
                         <Link
-                            href="#"
-                            className="text-sm font-medium transition-all hover:text-primary"
+                            href="/nosotros"
+                            className="text-sm font-medium transition-all hover:text-[#55206C]"
                         >
                             Nosotros
                         </Link>
@@ -85,8 +85,8 @@ export function Header() {
                         transition={{ duration: 0.2 }}
                     >
                         <Link
-                            href="#"
-                            className="text-sm font-medium transition-all hover:text-primary"
+                            href="/galeria"
+                            className="text-sm font-medium transition-all hover:text-[#55206C]"
                         >
                             Galería
                         </Link>
@@ -97,7 +97,7 @@ export function Header() {
                     >
                         <Link
                             href="#"
-                            className="text-sm font-medium transition-all hover:text-primary"
+                            className="text-sm font-medium transition-all hover:text-[#55206C]"
                         >
                             Contacto
                         </Link>
@@ -109,7 +109,10 @@ export function Header() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <Button asChild className="hidden md:inline-flex">
+                        <Button
+                            asChild
+                            className="hidden bg-[#55206C] md:inline-flex hover:bg-[#55206C]/90"
+                        >
                             <Link href="/cotizacion">Solicitar Cotización</Link>
                         </Button>
                     </motion.div>
@@ -141,37 +144,37 @@ export function Header() {
                         <nav className="container flex flex-col gap-4 py-4">
                             <Link
                                 href="/"
-                                className="text-sm font-medium hover:text-primary transition-colors"
+                                className="text-sm font-medium hover:text-[#55206C] transition-colors"
                             >
                                 Inicio
                             </Link>
                             <Link
                                 href="/cursos"
-                                className="text-sm font-medium hover:text-primary transition-colors"
+                                className="text-sm font-medium hover:text-[#55206C] transition-colors"
                             >
                                 Cursos
                             </Link>
                             <Link
                                 href="/crecimiento"
-                                className="text-sm font-medium hover:text-primary transition-colors"
+                                className="text-sm font-medium hover:text-[#55206C] transition-colors"
                             >
                                 Crecimiento
                             </Link>
                             <Link
                                 href="/nosotros"
-                                className="text-sm font-medium hover:text-primary transition-colors"
+                                className="text-sm font-medium hover:text-[#55206C] transition-colors"
                             >
                                 Nosotros
                             </Link>
                             <Link
                                 href="/galeria"
-                                className="text-sm font-medium hover:text-primary transition-colors"
+                                className="text-sm font-medium hover:text-[#55206C] transition-colors"
                             >
                                 Galería
                             </Link>
                             <Link
                                 href="#"
-                                className="text-sm font-medium hover:text-primary transition-colors"
+                                className="text-sm font-medium hover:text-[#55206C] transition-colors"
                             >
                                 Contacto
                             </Link>
@@ -179,10 +182,8 @@ export function Header() {
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                             >
-                                <Button asChild className="w-full">
-                                    <Link href="/cotizacion">
-                                        Solicitar Cotización
-                                    </Link>
+                                <Button asChild className="w-full bg-[#55206C] hover:bg-[#55206C]/90">
+                                    <Link href="/cotizacion">Solicitar Cotización</Link>
                                 </Button>
                             </motion.div>
                         </nav>

@@ -17,6 +17,7 @@ import {
     Star,
     ChevronLeft,
     ChevronRight,
+    ArrowUpRightIcon,
 } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 import { SlideIn } from "@/components/animations/slide-in";
@@ -66,14 +67,15 @@ export default function HomePage() {
                                 <HoverScale>
                                     <Button
                                         size="lg"
-                                        variant="secondary"
-                                        asChild
-                                        className="text-base"
+                                        className="bg-white text-primary hover:bg-white/90 group relative inline-flex items-center justify-center rounded-md  font-semibold"
                                     >
-                                        <Link href="/cursos">
-                                            Ver Cursos
-                                            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                                        </Link>
+                                        <Link href="/cursos">Ver Cursos</Link>
+                                        <div className="relative h-4 w-4 overflow-hidden">
+                                            <div className="absolute transition-all duration-200 group-hover:-translate-y-4 group-hover:translate-x-3">
+                                                <ArrowUpRightIcon className="h-4 stroke-3 w-4" />
+                                                <ArrowUpRightIcon className="h-4 stroke-3 w-4 -translate-x-3" />
+                                            </div>
+                                        </div>
                                     </Button>
                                 </HoverScale>
                                 <HoverScale>
@@ -298,7 +300,7 @@ export default function HomePage() {
                                             className="border-[#5E2B7E] text-[#5E2B7E] group-hover:border-white group-hover:bg-white group-hover:text-[#5E2B7E] transition-all duration-300"
                                             asChild
                                         >
-                                            <Link href="/servicios/talleres">
+                                            <Link href="/crecimiento">
                                                 Conocer Más
                                             </Link>
                                         </Button>
