@@ -429,7 +429,7 @@ export default function CursosPage() {
                             </p>
                             <HoverScale>
                                 <Button size="lg" asChild>
-                                    <Link href="#">
+                                    <Link href="/cotizacion">
                                         Solicitar Capacitación Personalizada
                                     </Link>
                                 </Button>

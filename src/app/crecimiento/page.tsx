@@ -475,7 +475,7 @@ export default function CrecimientoPage() {
                                     }}
                                     asChild
                                 >
-                                    <Link href="/talleres">
+                                    <Link href="#">
                                         Ver todos los talleres
                                         <ArrowRight className=" h-5 w-5" />
                                     </Link>

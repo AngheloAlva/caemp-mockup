@@ -369,7 +369,6 @@ export default function CotizacionPage() {
                                                 </div>
                                             </div>
 
-                                            {/* Selección de Cursos */}
                                             <div className="space-y-4">
                                                 <h3 className="font-semibold text-lg flex items-center gap-2">
                                                     <CheckCircle2 className="h-5 w-5 text-primary" />
@@ -380,7 +379,6 @@ export default function CotizacionPage() {
                                                     (puedes elegir varios)
                                                 </p>
 
-                                                {/* Cursos Seleccionados */}
                                                 {selectedCourses.length > 0 && (
                                                     <div className="flex flex-wrap gap-2 p-4 bg-primary/5 rounded-lg border border-primary/20">
                                                         {selectedCourses.map(
@@ -414,7 +412,6 @@ export default function CotizacionPage() {
                                                     </div>
                                                 )}
 
-                                                {/* Grid de Cursos */}
                                                 <div className="grid gap-3 md:grid-cols-2">
                                                     {availableCourses.map(
                                                         (course) => {
@@ -486,7 +483,6 @@ export default function CotizacionPage() {
                                                 </div>
                                             </div>
 
-                                            {/* Detalles Adicionales */}
                                             <div className="space-y-4">
                                                 <h3 className="font-semibold text-lg flex items-center gap-2">
                                                     <MessageSquare className="h-5 w-5 text-primary" />
@@ -533,7 +529,6 @@ export default function CotizacionPage() {
                                                 </div>
                                             </div>
 
-                                            {/* Botón de Envío */}
                                             <div className="pt-4">
                                                 <HoverScale>
                                                     <Button
